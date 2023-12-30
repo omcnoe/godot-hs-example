@@ -1,0 +1,17 @@
+cabal-version:      3.0
+name:               godot-hs-example
+version:            0.1.0.0
+license:            MIT
+author:             Oscar McNoe
+maintainer:         oscar.mcnoe@gmail.com
+
+foreign-library hs-logic
+    type:             native-shared
+    if os(Windows)
+        options:      standalone
+        mod-def-file: src/exports.def
+
+    build-depends:    base ^>=4.18.1.0
+    hs-source-dirs:   src
+    other-modules:    Add1
+    default-language: GHC2021
