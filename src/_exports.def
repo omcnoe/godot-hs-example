@@ -1,4 +1,6 @@
 EXPORTS
     hs_init = hs_init
     hs_exit = hs_exit
-    add1  = add1
+
+    hs_free  = hs_free
+    hs_hello = hs_hello

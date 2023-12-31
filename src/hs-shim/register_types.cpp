@@ -1,10 +1,12 @@
-#include "Add1_stub.h"
+#include "Hello_stub.h"
 #include <HsFFI.h>
 
 #include <gdextension_interface.h>
 #include <godot_cpp/core/class_db.hpp>
 #include <godot_cpp/core/defs.hpp>
 #include <godot_cpp/godot.hpp>
+
+#include <godot_cpp/variant/utility_functions.hpp>
 
 using namespace godot;
 
@@ -18,9 +20,9 @@ void init_hs_shim(ModuleInitializationLevel p_level) {
 	char **pargv = argv;
 	hs_init(&argc, &pargv);
 
-	godot::String s = std::to_string(add1(9)).c_str();
-
-	ERR_PRINT(s);
+	char *hello = (char*)hs_hello();
+	UtilityFunctions::print(hello);
+	hs_free(hello); // allocated by Haskell, must free by Haskell
 }
 
 void terminate_hs_shim(ModuleInitializationLevel p_level) {
