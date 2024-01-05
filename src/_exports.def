@@ -1,6 +1,0 @@
-EXPORTS
-    hs_init = hs_init
-    hs_exit = hs_exit
-
-    hs_free  = hs_free
-    hs_hello = hs_hello

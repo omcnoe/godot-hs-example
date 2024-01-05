@@ -1,9 +1,0 @@
-[configuration]
-
-entry_symbol = "init_hs_shim_gdextension"
-compatibility_minimum = "4.1"
-
-[libraries]
-
-windows.debug.x86_64 = "res://hs-shim.dll"
-windows.release.x86_64 = "res://hs-shim.dll"
