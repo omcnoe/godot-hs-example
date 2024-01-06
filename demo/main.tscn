@@ -1,3 +1,9 @@
-[gd_scene format=3 uid="uid://b786bugawawie"]
+[gd_scene load_steps=2 format=3 uid="uid://b786bugawawie"]
+
+[ext_resource type="Texture2D" uid="uid://hmqjrf0dnkjy" path="res://icon.svg" id="1_pr2hi"]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="MyClass" type="MyClass" parent="."]
+texture = ExtResource("1_pr2hi")
+centered = false

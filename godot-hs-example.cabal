@@ -5,16 +5,20 @@ license:            MIT
 author:             Oscar McNoe
 maintainer:         oscar.mcnoe@gmail.com
 
-foreign-library hs-logic
+foreign-library godot-hs-example
     type:             native-shared
     if os(Windows)
         options:      standalone
     build-depends:    base ^>=4.18.1.0
     default-language: GHC2021
     hs-source-dirs:   src
-    other-modules:    Hello
-    cxx-options:      -std=c++17 -fno-exceptions
-    cxx-sources:      src/register_types.cpp
+    ghc-options:      -Wall -O2
+    other-modules:
+        MyClass
+    cxx-options:      -Wall -std=c++17 -fno-exceptions
+    cxx-sources:
+        src/MyClass.cpp
+        src/register_types.cpp
     include-dirs:
         godot-cpp/gdextension
         godot-cpp/include

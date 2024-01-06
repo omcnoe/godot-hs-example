@@ -1,0 +1,9 @@
+[configuration]
+
+entry_symbol = "init_godot_hs_example_gdextension"
+compatibility_minimum = "4.2"
+
+[libraries]
+
+windows.debug.x86_64 = "res://godot-hs-example.dll"
+windows.release.x86_64 = "res://godot-hs-example.dll"

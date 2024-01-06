@@ -6,7 +6,7 @@ Call Haskell code from Godot engine
     3. `cmake --build build`
 2. Build Haskell project: `cabal build`
 3. Copy required files into demo project directory
-    * `hs-logic.dll`
-    * `hs-logic.gdextension`
+    * `godot-hs-example.dll`
+    * `godot-hs-example.gdextension`
     * `libc++.dll`
     * `libunwind.dll`
